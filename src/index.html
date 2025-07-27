@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CowBoy</title>
+
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/modern-normalize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="wrapper">
+          <ul class="menu">
+            <li class="menu__items">
+              <a href="#">Вітаємо</a>
+            </li>
+            <li class="menu__items">
+              <a href="#">Меню</a>
+            </li>
+            <li class="menu__items">
+              <a href="#">Контакти</a>
+            </li>
+            <li class="menu__items">
+              <a href="#">Локація</a>
+            </li>
+          </ul>
+
+          <div class="logo">
+            <img src="logo/Logo.svg" alt="Logotype" />
+          </div>
+
+          <div class="navigation">
+            <img src="img/basket.svg" alt="Basket" class="navigation__img" />
+            <img src="img/SearchIcon.svg" alt="Search" class="navigation__img" />
+            <button class="navigation__btn btn">Звʼязатися з нами</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="container">
+        <div class="wrapper">
+          <h1 class="main__header">Ми готуємо смачно та створюємо затишок для Вас</h1>
+          <p class="main__subheader subheader">Завітайте на ковбойське ранчо!</p>
+
+          <button class="btn main__btn">Замовлення онлайн</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container">
+        <h1 class="header">Кавказька та Європейська кухня</h1>
+        <p class="subheader">Кращий гриль у Миколаєві</p>
+
+        <div class="info__content">
+          <div class="info__descr">
+            It is a long established fact that a reader will be distracted layout. The point of using Lorem Ipsum is
+            that it has a more-or-less normal distribution of letters, as opposed to using English. Many desktop
+            publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
+            'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose It is a long established fact that a reader will be
+            distracted by the readable content of a page when looking at its layout. The normal distribution of letters,
+            as opposed to using 'Content Many desktop publishing packages and web page editors search for 'lorem ipsum'
+            will uncover many web sites still in humour and the like. <span class="info__expand">Read More</span>
+          </div>
+
+          <div class="info__video">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="img/video_content.png" alt="Посмотреть видео" class="info__video-content" />
+              <div class="info__play">
+                <div class="info__play-btn"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <h1 class="header">Наше найкраще та смачне меню</h1>
+        <ul class="products__items">
+          <li class="active" data-filter="all">Переглянути все</li>
+          <li data-filter="meat">Мʼясо</li>
+          <li data-filter="salad">Салати</li>
+          <li data-filter="alcohol">Алкоголь</li>
+          <li data-filter="dessert">Десерти</li>
+          <li data-filter="pizza">Піцци</li>
+          <li data-filter="soup">Перші страви</li>
+        </ul>
+
+        <div class="products__grid">
+          <div class="products__item" data-category="meat">
+            <img class="products__img" src="img/food1.png" alt="food" />
+            <h2 class="products__header">Мʼясна дошка</h2>
+            <p class="products__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="products__wrapper">
+              <div class="products__price">1.85</div>
+              <div class="products__basket">
+                <img src="img/shopping-cart.png" alt="shoping" />
+              </div>
+            </div>
+          </div>
+          <div class="products__item" data-category="meat">
+            <img class="products__img" src="img/food1.png" alt="food" />
+            <h2 class="products__header">Мʼясна дошка</h2>
+            <p class="products__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="products__wrapper">
+              <div class="products__price">1.85</div>
+              <div class="products__basket">
+                <img src="img/shopping-cart.png" alt="shoping" />
+              </div>
+            </div>
+          </div>
+          <div class="products__item" data-category="salad">
+            <img class="products__img" src="img/food1.png" alt="food" />
+            <h2 class="products__header">Мʼясна дошка</h2>
+            <p class="products__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="products__wrapper">
+              <div class="products__price">1.85</div>
+              <div class="products__basket">
+                <img src="img/shopping-cart.png" alt="shoping" />
+              </div>
+            </div>
+          </div>
+          <div class="products__item" data-category="alcohol">
+            <img class="products__img" src="img/food1.png" alt="food" />
+            <h2 class="products__header">Мʼясна дошка</h2>
+            <p class="products__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="products__wrapper">
+              <div class="products__price">1.85</div>
+              <div class="products__basket">
+                <img src="img/shopping-cart.png" alt="shoping" />
+              </div>
+            </div>
+          </div>
+          <div class="products__item" data-category="pizza">
+            <img class="products__img" src="img/food1.png" alt="food" />
+            <h2 class="products__header">Мʼясна дошка</h2>
+            <p class="products__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="products__wrapper">
+              <div class="products__price">1.85</div>
+              <div class="products__basket">
+                <img src="img/shopping-cart.png" alt="shoping" />
+              </div>
+            </div>
+          </div>
+          <div class="products__item" data-category="meat">
+            <img class="products__img" src="img/food1.png" alt="food" />
+            <h2 class="products__header">Мʼясна дошка</h2>
+            <p class="products__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="products__wrapper">
+              <div class="products__price">1.85</div>
+              <div class="products__basket">
+                <img src="img/shopping-cart.png" alt="shoping" />
+              </div>
+            </div>
+          </div>
+
+          <!-- hiden elements -->
+
+          <div class="products__item hidden" data-category="meat">
+            <img class="products__img" src="img/food1.png" alt="food" />
+            <h2 class="products__header">Мʼясна дошка</h2>
+            <p class="products__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="products__wrapper">
+              <div class="products__price">1.85</div>
+              <div class="products__basket">
+                <img src="img/shopping-cart.png" alt="shoping" />
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item hidden" data-category="salad">
+            <img class="products__img" src="img/food1.png" alt="food" />
+            <h2 class="products__header">Мʼясна дошка</h2>
+            <p class="products__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="products__wrapper">
+              <div class="products__price">1.85</div>
+              <div class="products__basket">
+                <img src="img/shopping-cart.png" alt="shoping" />
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item hidden" data-category="pizza">
+            <img class="products__img" src="img/food1.png" alt="food" />
+            <h2 class="products__header">Мʼясна дошка</h2>
+            <p class="products__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="products__wrapper">
+              <div class="products__price">1.85</div>
+              <div class="products__basket">
+                <img src="img/shopping-cart.png" alt="shoping" />
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item hidden" data-category="pizza">
+            <img class="products__img" src="img/food1.png" alt="food" />
+            <h2 class="products__header">Мʼясна дошка</h2>
+            <p class="products__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="products__wrapper">
+              <div class="products__price">1.85</div>
+              <div class="products__basket">
+                <img src="img/shopping-cart.png" alt="shoping" />
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item hidden" data-category="alcohol">
+            <img class="products__img" src="img/food1.png" alt="food" />
+            <h2 class="products__header">Мʼясна дошка</h2>
+            <p class="products__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="products__wrapper">
+              <div class="products__price">1.85</div>
+              <div class="products__basket">
+                <img src="img/shopping-cart.png" alt="shoping" />
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item hidden" data-category="meat">
+            <img class="products__img" src="img/food1.png" alt="food" />
+            <h2 class="products__header">Мʼясна дошка</h2>
+            <p class="products__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="products__wrapper">
+              <div class="products__price">1.85</div>
+              <div class="products__basket">
+                <img src="img/shopping-cart.png" alt="shoping" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <button class="products__btn btn">Більше</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="newFoods">
+      <div class="container">
+        <div class="newFoods__wrapper">
+          <div class="newFoods__text">
+            <h1 class="newFoods__header header">Нові блюда</h1>
+            <p class="newFoods__subheader subheader">Нові страви у нашому меню</p>
+          </div>
+
+          <div class="img">
+            <img id="foodPreview" src="img/food.png" alt="food" />
+          </div>
+
+          <ul class="newFoods__items">
+            <li class="newFoods__option" data-id="caviar">Caviar Express</li>
+            <li class="newFoods__option" data-id="steak">Beef Steak</li>
+            <li class="newFoods__option" data-id="something">Caviar Express</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- js connected -->
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
