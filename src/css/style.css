@@ -18,7 +18,8 @@ img {
 
 :root {
     --bg-main-color: #000;
-    --main-crolor: #FFFF;
+    --main-color: #FFFF;
+    --gray--color: #cdcdcd;
 }
 
 html {
@@ -304,11 +305,102 @@ nav {
 }
 
 .newFoods {
-    height: 100vh;
-    padding-top: 50px;
+    padding-top: 100px;
+    background-color: var(--bg-main-color, #000);
 
     .newFoods__wrapper {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        column-gap: 20px;
+        .img {
+            max-width: 600px;
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+    .newFoods__header {
+        text-transform: uppercase;
+    }
+    .newFoods__subheader {
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .newFoods__items {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        max-width: 500px;
+        li {
+            display: flex;
+            align-items: center;
+            column-gap: 40px;
+            color: var(--main-crolor, #fff);
+            background-color: var(--main-crolor, #fff);
+            border-radius: 50px 5px 5px 50px;
+            padding: 10px 10px;
+            cursor: pointer;
+            img {
+                width: 70px;
+            }
+            .newFoods__header {
+                color: var(--bg-main-color, #000);
+                font-size: 17px;
+                font-weight: 700;
+                font-style: normal;
+            }
+        
+            .newFoods__subheader {
+                margin-top: 10px;
+                color: var(--bg-main-color, #000);
+                font-size: 12px;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+        }
+         .newFoods__option.active {
+            background-color: #cdcdcd;
+            transform-origin: right;
+            transform: scale(1.15);
+        }
+    }
+}
+
+.support {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    .support__header {
+        color: var(--bg-main-color, #000);
+    }
+}
+
+.support__wrapper {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.support__items {
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    row-gap: 32px;
+    justify-content: center;
+    input {
+        height: 68px;
+        border-radius: 30px;
+        padding: 20px 30px;
+        border: 1px solid var(--gray--color, #cdcdcd);
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .support__btn {
+        background-color: var(--bg-main-color, #000);
+        color: var(--main-color, #fff);
     }
 }

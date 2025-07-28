@@ -81,7 +81,46 @@
       </div>
     </section>
 
-    <section class="products">
+    <section class="newFoods">
+      <div class="container">
+        <div class="newFoods__wrapper">
+          <div class="newFoods__text">
+            <h1 class="newFoods__header header">Нові блюда</h1>
+            <p class="newFoods__subheader subheader">Нові страви у нашому меню</p>
+          </div>
+
+          <div class="img">
+            <img id="foodPreview" src="img/food.png" alt="food" />
+          </div>
+
+          <ul class="newFoods__items">
+            <li class="newFoods__option active" data-id="caviar">
+              <img src="icons/icon-caviar.png" alt="food" />
+              <div class="textContainer">
+                <h2 class="newFoods__header">Caviar Express</h2>
+                <p class="newFoods__subheader">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </li>
+            <li class="newFoods__option" data-id="steak">
+              <img src="icons/icon-caviar.png" alt="food" />
+              <div class="textContainer">
+                <h2 class="newFoods__header">Caviar Express</h2>
+                <p class="newFoods__subheader">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </li>
+            <li class="newFoods__option" data-id="berry">
+              <img src="icons/icon-caviar.png" alt="food" />
+              <div class="textContainer">
+                <h2 class="newFoods__header">Barry Express</h2>
+                <p class="newFoods__subheader">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products">
       <div class="container">
         <h1 class="header">Наше найкраще та смачне меню</h1>
         <ul class="products__items">
@@ -255,23 +294,17 @@
       </div>
     </section>
 
-    <section class="newFoods">
+    <section class="support">
       <div class="container">
-        <div class="newFoods__wrapper">
-          <div class="newFoods__text">
-            <h1 class="newFoods__header header">Нові блюда</h1>
-            <p class="newFoods__subheader subheader">Нові страви у нашому меню</p>
-          </div>
+        <h1 class="support__header header">Для консультацій та звяʼзку</h1>
 
-          <div class="img">
-            <img id="foodPreview" src="img/food.png" alt="food" />
+        <div class="support__wrapper">
+          <div class="support__items">
+            <input type="text" name="name" placeholder="Імʼя" maxlength="15" required />
+            <input type="tel" name="phone" placeholder="+380XXXXXXXXX" pattern="^\+380\d{9}$" maxlength="12" required />
+            <input type="email" name="email" placeholder="example@mail.com" required />
+            <button class="support__btn btn">Відправити</button>
           </div>
-
-          <ul class="newFoods__items">
-            <li class="newFoods__option" data-id="caviar">Caviar Express</li>
-            <li class="newFoods__option" data-id="steak">Beef Steak</li>
-            <li class="newFoods__option" data-id="something">Caviar Express</li>
-          </ul>
         </div>
       </div>
     </section>

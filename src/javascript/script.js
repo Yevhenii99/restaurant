@@ -26,6 +26,13 @@ filterButtons.forEach(button => {
 seeMoreBtn.addEventListener('click', () => {
   expanded = !expanded;
   seeMoreBtn.textContent = expanded ? 'Сховати' : 'Показати більше';
+
+  if (!expanded) {
+  document.getElementById('products').scrollIntoView({
+    behavior: 'smooth'
+    });
+  }
+
   updateVisibleItems();
 });
 
@@ -54,21 +61,23 @@ function updateVisibleItems() {
 }
 
 
+// ---> new food (Food Zone) section
 
 const options = document.querySelectorAll('.newFoods__option');
 const image = document.getElementById('foodPreview');
 
 const imagesMap = {
   caviar: 'img/food.png',
-  steak: 'img/food1.png',
-  berry: 'img/food.jpg',
-  dessert: 'img/food.jpg'
+  steak: 'img/food2.png',
+  berry: 'img/food3.png',
+  dessert: 'img/food.png'
 };
+
+
 
 options.forEach(option => {
   option.addEventListener('click', () => {
     const id = option.dataset.id;
-    console.log(id);
     
 
     // Меняем изображение
