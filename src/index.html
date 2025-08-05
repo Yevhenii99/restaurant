@@ -86,7 +86,7 @@
         <div class="newFoods__wrapper">
           <div class="newFoods__text">
             <h1 class="newFoods__header header">Нові блюда</h1>
-            <p class="newFoods__subheader subheader">Нові страви у нашому меню</p>
+            <p class="newFoods__subheader subheader">Новинки нашого меню</p>
           </div>
 
           <div class="img">
@@ -299,12 +299,106 @@
         <h1 class="support__header header">Для консультацій та звяʼзку</h1>
 
         <div class="support__wrapper">
-          <div class="support__items">
-            <input type="text" name="name" placeholder="Імʼя" maxlength="15" required />
-            <input type="tel" name="phone" placeholder="+380XXXXXXXXX" pattern="^\+380\d{9}$" maxlength="12" required />
-            <input type="email" name="email" placeholder="example@mail.com" required />
-            <button class="support__btn btn">Відправити</button>
+          <form action="#" class="support__items">
+            <fieldset>
+              <input type="text" id="name" name="name" placeholder="Імʼя" maxlength="15" required />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+380XXXXXXXXX"
+                pattern="^\+380\d{9}$"
+                maxlength="12"
+                required
+              />
+              <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+              <button class="support__btn btn">Відправити</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="location">
+      <div class="container">
+        <div class="wrapper">
+          <div class="location__txt">
+            <div class="location__header header">Як саме Ви можете нас знайти?</div>
+            <div class="location__subheader subheader">
+              Хочете насолодитися чудовою їжею у винятковому затишку з родиною, друзями чи колегами з роботи? Ось адреса
+              нашого ресторану.
+            </div>
+            <address>вулиця Лазурна, 1/7, Миколаїв, Миколаївська область, 54000</address>
           </div>
+
+          <div class="location__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.9931419886193!2d31.936818543986703!3d46.95635415815241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5c932fcd1d0c9%3A0xa101ed41f3da85dc!2zQ293Ym95LCDQutCw0YTQtSDQsdCw0YAg0JrQvtCy0LHQvtC5INC90LAg0LHQtdGA0LXQs9GD!5e1!3m2!1sru!2sua!4v1754317218074!5m2!1sru!2sua"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="footer__txt">
+          <ul class="footer__items">
+            <h2 class="footer__header">Наші продукти</h2>
+            <li class="footer__item">Продукти</li>
+            <li class="footer__item">Щось</li>
+            <li class="footer__item"></li>
+          </ul>
+
+          <ul class="footer__items">
+            <h2 class="footer__header">Інформація</h2>
+            <li class="footer__item">інфо</li>
+            <li class="footer__item">дані</li>
+            <li class="footer__item"></li>
+          </ul>
+
+          <ul class="footer__items">
+            <h2 class="footer__header">Контакти</h2>
+            <li class="footer__item">звʼязок</li>
+            <li class="footer__item"></li>
+            <li class="footer__item"></li>
+          </ul>
+
+          <ul class="footer__items">
+            <h2 class="footer__header">Платіжні методи</h2>
+            <li class="footer__item footer__grid">
+              <img src="logo/Mastercard.svg" alt="Mastercard" />
+              <img src="logo/Visa.svg" alt="Visa" />
+            </li>
+          </ul>
+        </div>
+        <div class="divider"></div>
+        <div class="footer__social-box">
+          <ul class="footer__social">
+            <li>
+              <a href="#" class="social__item">
+                <img src="icons/fb.svg" alt="facebook" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social__item">
+                <img src="icons/inst.svg" alt="instagram" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social__item">
+                <img src="icons/twitter.svg" alt="twitter" />
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer__allRights">© 2025 Всі права захищені.</div>
         </div>
       </div>
     </section>

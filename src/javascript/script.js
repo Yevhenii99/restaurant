@@ -89,4 +89,26 @@ options.forEach(option => {
   });
 });
 
+// Expand text info section
+
+
+//  document.addEventListener("DOMContentLoaded", function () {
+//     const wrapper = document.querySelector('.info__wrapper');
+//     const expandBtn = wrapper.querySelector('.info__expand');
+//     const collapsedHeight = 200;
+
+//     // Функция для разворачивания / сворачивания
+//     let expanded = false;
+
+//     expandBtn.addEventListener('click', function () {
+//       if (!expanded) {
+//         wrapper.classList.add('expanded');
+//         expandBtn.textContent = 'Read Less';
+//       } else {
+//         wrapper.classList.remove('expanded');
+//         expandBtn.textContent = 'Read More';
+//       }
+//       expanded = !expanded;
+//     });
+//   });
 

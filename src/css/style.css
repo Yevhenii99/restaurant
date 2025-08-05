@@ -19,7 +19,8 @@ img {
 :root {
     --bg-main-color: #000;
     --main-color: #FFFF;
-    --gray--color: #cdcdcd;
+    --gray-color: #cdcdcd;
+    --footer-bg: #191919;
 }
 
 html {
@@ -305,6 +306,7 @@ nav {
 }
 
 .newFoods {
+    display: none;
     padding-top: 100px;
     background-color: var(--bg-main-color, #000);
 
@@ -385,22 +387,178 @@ nav {
 }
 
 .support__items {
-    display: flex;
-    flex-direction: column;
     width: 530px;
-    row-gap: 32px;
-    justify-content: center;
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
     input {
         height: 68px;
         border-radius: 30px;
         padding: 20px 30px;
-        border: 1px solid var(--gray--color, #cdcdcd);
+        border: 1px solid var(--gray-color, #cdcdcd);
         font-size: 20px;
         font-weight: 400;
         font-style: normal;
+        &:focus {
+            outline: 1px solid var(--bg-main-color, #000);
+        }
     }
     .support__btn {
         background-color: var(--bg-main-color, #000);
         color: var(--main-color, #fff);
     }
+}
+
+.location {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: var(--bg-main-color, #000);
+    .wrapper {
+        padding: 0px;
+        column-gap: 100px;
+    }
+    .header {
+        margin-top: 40px;
+    }
+    address {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+}
+
+.location__map {
+    min-width: 480px;
+    min-height: 470px;
+    border-radius: 10px;
+    iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+.footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--footer-bg, #191919);
+    .footer__txt {
+        display: flex;
+        justify-content: space-between;
+        .footer__items {
+            color: var(--main-color, #fff);
+            list-style-type: none;
+            .footer__header {
+                margin-bottom: 20px;
+                font-size: 24px;
+                font-style: normal;
+                cursor: pointer;
+            }
+            .footer__item {
+                margin-top: 10px;
+                font-size: 18px;
+                font-style: normal;
+                cursor: pointer;
+            }
+            .footer__grid {
+                display: flex;
+                column-gap: 20px;
+                cursor: default;
+            }
+        }
+    }
+    .divider {
+        margin-top: 70px;
+        border-top: 1px solid #4f4f4f;
+        width: 100%;
+    }
+    .footer__social-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        .footer__social {
+            display: flex;
+            column-gap: 20px;
+            list-style-type: none;
+        }
+        .footer__allRights {
+            font-size: 18px;
+            font-style: normal;
+            color: var(--main-color, #fff);
+        }
+    }   
+}
+
+/* media rules */
+
+@media screen and (max-width: 1200px) {
+
+    .header {
+        font-size: 45px;
+    }
+    .subheader {
+        font-size: 18px;
+    }
+
+
+    .menu {
+        column-gap: 20px;
+    }
+
+    .logo {
+        top: 25px;
+        height: 65px;
+        img {
+            height: 100%;
+        }
+    }
+
+    .navigation {
+        img {
+            display: none;
+        }
+        .btn {
+            width: 190px;
+            height: 55px;
+            font-size: 16px;
+        }
+    }
+
+    .main {
+        padding-bottom: 195px;
+        .main__header {
+            font-size: 60px;
+        }
+        .main__subheader {
+            font-size: 18px;
+        }
+        .main__btn {
+            width: 190px;
+            height: 55px;
+            font-size: 16px;
+        }
+    }
+
+    .info {
+        padding-top: 100px;
+        .info__content {
+            column-gap: 70px;
+        }
+        .info__video {
+            .info__video-content {
+                max-height: 300px;
+            }
+        }
+        .info__play {
+            width: 75px;
+            height: 75px;
+        }
+    }
+
 }
