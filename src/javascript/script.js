@@ -1,7 +1,5 @@
 "use strict"
 
-
-
 const filterButtons = document.querySelectorAll('.products__items li');
 const allItems = document.querySelectorAll('.products__item');
 const seeMoreBtn = document.querySelector('.products__btn');
@@ -91,24 +89,19 @@ options.forEach(option => {
 
 // Expand text info section
 
+const text = document.querySelector('.info__descr');
+const expandBtn = document.querySelector('.info__expand');
 
-//  document.addEventListener("DOMContentLoaded", function () {
-//     const wrapper = document.querySelector('.info__wrapper');
-//     const expandBtn = wrapper.querySelector('.info__expand');
-//     const collapsedHeight = 200;
+const isExpanded = false;
 
-//     // Функция для разворачивания / сворачивания
-//     let expanded = false;
+expandBtn.addEventListener('click', () => {
 
-//     expandBtn.addEventListener('click', function () {
-//       if (!expanded) {
-//         wrapper.classList.add('expanded');
-//         expandBtn.textContent = 'Read Less';
-//       } else {
-//         wrapper.classList.remove('expanded');
-//         expandBtn.textContent = 'Read More';
-//       }
-//       expanded = !expanded;
-//     });
-//   });
+  text.classList.toggle('expanded');
+  
+  expandBtn.classList.toggle('active');
+
+  // expandBtn.textContent = 'Показати менше';
+
+});
+
 
