@@ -87,21 +87,8 @@ options.forEach(option => {
   });
 });
 
-// Expand text info section
+// Expand text info section (not yet, maybe later i will add this option)
 
-const text = document.querySelector('.info__descr');
-const expandBtn = document.querySelector('.info__expand');
 
-const isExpanded = false;
-
-expandBtn.addEventListener('click', () => {
-
-  text.classList.toggle('expanded');
-  
-  expandBtn.classList.toggle('active');
-
-  // expandBtn.textContent = 'Показати менше';
-
-});
 
 
