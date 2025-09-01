@@ -89,6 +89,22 @@ options.forEach(option => {
 
 // Expand text info section (not yet, maybe later i will add this option)
 
+// .....
 
 
+// - burger script
+
+const burger = document.querySelector(".burger"),
+	close = document.querySelector(".navigation__menu-close"),
+	menu = document.querySelector(".navigation__menu");
+
+burger.addEventListener("click", () => {
+	menu.classList.add("active");
+	document.body.style.overflow = "hidden";
+});
+
+close.addEventListener("click", () => {
+	menu.classList.remove("active");
+	document.body.style.overflow = "";
+});
 
