@@ -193,7 +193,10 @@ nav {
 }
 
 .main {
-    background: url('../img/Background.png') center center / cover no-repeat;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../img/Meat_BGmain.jpg') center center / cover no-repeat;
+    
     padding: 72px 0 250px 0;
     .wrapper {
         width: 660px;
@@ -233,7 +236,7 @@ nav {
         width: 50%;
         color: var(--main-crolor, #fff);
         font-size: 18px;
-        line-height: 1.6em;
+        line-height: 1.7em;
         font-weight: 400;
     }
 
@@ -706,9 +709,10 @@ nav {
     .products {
         .products__items {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-template-rows: auto;
             place-items: center;
+            row-gap: 15px;
 
             li {
                 font-size: 20px;
@@ -739,6 +743,32 @@ nav {
             iframe {
                 height: 400px;
             }
+        }
+    }
+
+    .footer {
+        .footer__txt {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            row-gap: 20px;
+            column-gap: 10px;
+            justify-content: center;
+            .footer__items {
+            
+                .footer__header {
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                    font-style: normal;
+                    cursor: pointer;
+                }
+        
+                .footer__item {
+                    margin-top: 10px;
+                    font-size: 16px;
+                    font-style: normal;
+                }
+            }  
         }
     }
 }
@@ -815,7 +845,8 @@ nav {
         }
 
         .products__grid {
-            grid-template-columns: auto;
+            grid-template-columns: 400px;
+            justify-content: center;
         }
     }
 }
@@ -886,6 +917,31 @@ nav {
         }
     }
 
+    .products {
+        .products__items {
+            grid-template-columns: 1fr;
+        }
+        .products__grid {
+            grid-template-columns: auto;
+        }
+    }
+
+    .footer {
+        padding-bottom: 55px;
+        .footer__txt {
+            grid-template-columns: 1fr;
+        }
+
+        .footer__social-box {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            gap: 20px;
+            .footer__social {
+                column-gap: 50px;
+            }
+        }
+    }
 }
 
 /* --- */
