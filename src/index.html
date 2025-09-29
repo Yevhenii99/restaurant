@@ -30,9 +30,6 @@
           <div class="burger"><span></span><span></span><span></span></div>
           <ul class="menu">
             <li class="menu__items">
-              <a href="#">Вітаємо</a>
-            </li>
-            <li class="menu__items">
               <a href="#">Меню</a>
             </li>
             <li class="menu__items">
@@ -49,7 +46,9 @@
 
           <div class="navigation">
             <img src="img/basket.svg" alt="Basket" class="navigation__img" />
-            <img src="img/SearchIcon.svg" alt="Search" class="navigation__img" />
+
+            <!-- searching img will be hiden so for -->
+            <!-- <img src="img/SearchIcon.svg" alt="Search" class="navigation__img" /> -->
             <button class="navigation__btn btn">Звʼязатися з нами</button>
           </div>
         </div>
@@ -97,48 +96,96 @@
 
     <section class="newFoods">
       <div class="container">
-        <div class="newFoods__wrapper">
-          <div class="newFoods__text">
-            <h1 class="newFoods__header header">Нові блюда</h1>
-            <p class="newFoods__subheader subheader">Новинки нашого меню</p>
+        <div class="slider-desktop">
+          <div class="newFoods__wrapper">
+            <div class="newFoods__text">
+              <h1 class="newFoods__header header">Нові блюда</h1>
+              <p class="newFoods__subheader subheader">Новинки нашого меню</p>
+            </div>
+
+            <div class="img">
+              <img id="foodPreview" src="img/food.png" alt="food" />
+            </div>
+
+            <ul class="newFoods__items">
+              <li class="newFoods__option active" data-id="caviar">
+                <img src="icons/icon-caviar.png" alt="food" />
+                <div class="textContainer">
+                  <h2 class="newFoods__header">Caviar Express</h2>
+                  <p class="newFoods__subheader">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </li>
+              <li class="newFoods__option" data-id="steak">
+                <img src="icons/icon-caviar.png" alt="food" />
+                <div class="textContainer">
+                  <h2 class="newFoods__header">Caviar Express</h2>
+                  <p class="newFoods__subheader">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </li>
+              <li class="newFoods__option" data-id="berry">
+                <img src="icons/icon-caviar.png" alt="food" />
+                <div class="textContainer">
+                  <h2 class="newFoods__header">Barry Express</h2>
+                  <p class="newFoods__subheader">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="slider-mobile">
+          <h1 class="header">Нові блюда</h1>
+          <p class="subheader">Новинки меню, спробуйте!</p>
+
+          <div class="slider">
+            <div class="slide" id="slide1">
+              <img src="img/fish/Silver_carp.png" alt="dish1" />
+              <p class="dish_name">Карп</p>
+            </div>
+            <div class="slide" id="slide2">
+              <img src="img/meat/Royal_cutlet.png" alt="dish2" />
+              <p class="dish_name">Королівська відбивна</p>
+            </div>
+            <div class="slide" id="slide3">
+              <img src="img/salads/Seafood.png" alt="dish3" />
+              <p class="dish_name">Салат Морський</p>
+            </div>
           </div>
 
-          <div class="img">
-            <img id="foodPreview" src="img/food.png" alt="food" />
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
           </div>
-
-          <ul class="newFoods__items">
-            <li class="newFoods__option active" data-id="caviar">
-              <img src="icons/icon-caviar.png" alt="food" />
-              <div class="textContainer">
-                <h2 class="newFoods__header">Caviar Express</h2>
-                <p class="newFoods__subheader">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </li>
-            <li class="newFoods__option" data-id="steak">
-              <img src="icons/icon-caviar.png" alt="food" />
-              <div class="textContainer">
-                <h2 class="newFoods__header">Caviar Express</h2>
-                <p class="newFoods__subheader">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </li>
-            <li class="newFoods__option" data-id="berry">
-              <img src="icons/icon-caviar.png" alt="food" />
-              <div class="textContainer">
-                <h2 class="newFoods__header">Barry Express</h2>
-                <p class="newFoods__subheader">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </li>
-          </ul>
         </div>
       </div>
     </section>
 
-    <section id="products" class="products">
+    <section class="products" id="products">
+      <div class="container">
+        <!-- Заголовок -->
+        <h2 class="products__header header">Наше найкраще смачне меню</h2>
+
+        <!-- Список категорий (рендерится из JSON) -->
+        <ul class="products__items"></ul>
+
+        <!-- Карточки товаров (рендерятся из JSON) -->
+        <div class="products__list"></div>
+
+        <!-- Кнопка "Показати більше" -->
+        <button class="products__btn">Показати більше</button>
+      </div>
+    </section>
+
+    <!-- <section id="products" class="products">
       <div class="container">
         <h1 class="header">Наше найкраще та смачне меню</h1>
-        <ul class="products__items">
-          <li class="active" data-filter="all">Переглянути все</li>
+
+        <ul class="products__items"></ul>
+        <div class="products" id="products"></div>
+        <button class="products__btn">Показати більше</button> -->
+
+    <!-- <ul class="products__items">
           <li data-filter="meat">Мʼясо</li>
           <li data-filter="salad">Салати</li>
           <li data-filter="alcohol">Алкоголь</li>
@@ -154,7 +201,7 @@
             <p class="products__descr">Класична «Шуба» — насичений смак традицій у кожному шматочку!</p>
 
             <div class="products__wrapper">
-              <div class="products__price">145</div>
+              <div class="products__price">10</div>
               <div class="products__basket">
                 <img src="img/shopping-cart.png" alt="shoping" />
               </div>
@@ -172,6 +219,7 @@
               </div>
             </div>
           </div>
+
           <div class="products__item" data-category="salad">
             <img class="products__img" src="img/salads/European.png" alt="food" />
             <h2 class="products__header">Європейський</h2>
@@ -219,11 +267,11 @@
                 <img src="img/shopping-cart.png" alt="shoping" />
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <!-- hiden elements -->
+    <!-- hiden elements -->
 
-          <div class="products__item hidden" data-category="meat">
+    <!-- <div class="products__item hidden" data-category="meat">
             <img class="products__img" src="img/meat/Liver_and_heart.png" alt="food" />
             <h2 class="products__header">Печінка та серце</h2>
             <p class="products__descr">Ситно, ароматно і просто смачно!</p>
@@ -304,9 +352,9 @@
 
         <div class="box">
           <button class="products__btn btn">Більше</button>
-        </div>
-      </div>
-    </section>
+        </div> -->
+    <!-- </div>
+    </section> -->
 
     <section class="support">
       <div class="container">

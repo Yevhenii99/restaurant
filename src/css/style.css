@@ -322,7 +322,16 @@ nav {
             width: 100%;
         }
 
-    }   
+    }  
+    .products__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        margin-top: 30px;
+    } 
+    .products__item {
+        background-color: grey;
+    }
 }
 
 
@@ -403,10 +412,20 @@ nav {
 }
 
 .newFoods {
-    display: none;
+    display: block;
     padding-top: 100px;
     background-color: var(--bg-main-color, #000);
 
+    .slider-mobile {
+        display: block;
+    }
+
+    .slider-desktop {
+        display: none;
+    }
+
+
+    
     .newFoods__wrapper {
         display: flex;
         align-items: center;
@@ -467,6 +486,74 @@ nav {
             transform: scale(1.15);
         }
     }
+
+
+
+
+    .slider {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        gap: 10px;
+        padding: 10px;
+
+        /* скрываем скроллбар */
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE/Edge */
+    }
+
+    .slider::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari */
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        .dish_name {
+            margin-top: 30px;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    /* Индикаторы */
+    .dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        background: #fff;
+        border-radius: 50%;
+        display: block;
+        transition: background 0.3s;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .dot.active {
+        background: #555;
+    }
+
 }
 
 .support {
@@ -706,6 +793,29 @@ nav {
         }
     }
 
+    .newFoods {
+        .newFoods__wrapper {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+
+            .newFoods__items {
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                max-width: 70%;
+
+                .newFoods__option.active {
+                    transform-origin: center;
+                }
+
+                li {
+                    border-radius: 50px 50px 50px 50px;
+                }
+            }
+        }
+    }
+
     .products {
         .products__items {
             display: grid;
@@ -769,6 +879,26 @@ nav {
                     font-style: normal;
                 }
             }  
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .newFoods {
+        .newFoods__wrapper {
+            .newFoods__items {
+
+                li {
+                    border-radius: 50px 50px 50px 50px;
+
+                    img {
+                        display: none;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
@@ -849,12 +979,25 @@ nav {
             justify-content: center;
         }
     }
+
 }
 
 
 @media screen and (min-width: 769px) {
     .navigation__menu {
         display: none;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .newFoods {
+        .slider-mobile {
+            display: none;
+        }
+        
+        .slider-desktop {
+            display: block;
+        }
     }
 }
 

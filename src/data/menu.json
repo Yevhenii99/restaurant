@@ -1,0 +1,52 @@
+{
+  "categories": [
+    { "id": "meat", "title": "М'ясо" },
+    { "id": "salads", "title": "Салати" },
+    { "id": "drinks", "title": "Напої" },
+    { "id": "desserts", "title": "Десерти" }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "Стейк з яловичини",
+      "price": 250,
+      "image": "img/meat/Grilled_pork.png",
+      "category": "meat"
+    },
+    {
+      "id": 2,
+      "title": "Курячі крильця",
+      "price": 180,
+      "image": "img/meat/Lamb_chops.png",
+      "category": "meat"
+    },
+    {
+      "id": 3,
+      "title": "Грецький салат",
+      "price": 120,
+      "image": "img/salads/Greek.png",
+      "category": "salads"
+    },
+    {
+      "id": 4,
+      "title": "Гавайський",
+      "price": 150,
+      "image": "img/salads/Hawaiian.png",
+      "category": "salads"
+    },
+    {
+      "id": 5,
+      "title": "Вино",
+      "price": 60,
+      "image": "img/alcohol/wine.jpg",
+      "category": "alcohol"
+    },
+    {
+      "id": 6,
+      "title": "Щось",
+      "price": 140,
+      "image": "img/meat/Chalaghach.png",
+      "category": "meat"
+    }
+  ]
+}
